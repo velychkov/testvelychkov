@@ -9,3 +9,22 @@ Traceback (most recent call last):
     from bs4 import BeautifulSoup
 ImportError: No module named bs4
 >>> 
+
+
+page = urllib2.urlopen('http://klo.ua/')
+html = page.read()
+soup = BeautifulSoup(html, "html5lib")
+
+
+ua95 = soup.find("div", {"class": "p-95-ua"})
+sup95 = soup.find("div", {"class": "p-95-super"})
+ven95 = soup.find("div", {"class": "p-95-ventus"})
+dtven = soup.find("div", {"class": "p-ventus-dt"})
+dp = soup.find("div", {"class": "p-dp"})
+
+
+ua95 = soup.find("div", {"class": "p-95-ua"})
+sup95 = soup.find("div", {"class": "p-95-super"})
+ven95 = soup.find("div", {"class": "p-95-ventus"})
+dtven = soup.find("div", {"class": "p-ventus-dt"})
+dp = soup.find("div", {"class": "p-dp"})
