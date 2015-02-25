@@ -10,4 +10,25 @@ Traceback (most recent call last):
 ImportError: No module named bs4
 >>> 
 
+<<<<<<< HEAD
 test branch checkaut
+=======
+
+page = urllib2.urlopen('http://klo.ua/')
+html = page.read()
+soup = BeautifulSoup(html, "html5lib")
+
+
+ua95 = soup.find("div", {"class": "p-95-ua"})
+sup95 = soup.find("div", {"class": "p-95-super"})
+ven95 = soup.find("div", {"class": "p-95-ventus"})
+dtven = soup.find("div", {"class": "p-ventus-dt"})
+dp = soup.find("div", {"class": "p-dp"})
+
+
+ua95 = soup.find("div", {"class": "p-95-ua"})
+sup95 = soup.find("div", {"class": "p-95-super"})
+ven95 = soup.find("div", {"class": "p-95-ventus"})
+dtven = soup.find("div", {"class": "p-ventus-dt"})
+dp = soup.find("div", {"class": "p-dp"})
+>>>>>>> sourscodepart2
