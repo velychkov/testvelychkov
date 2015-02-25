@@ -1,0 +1,5 @@
+ua95 = ua95.findAll('span')
+sup95 = sup95.findAll('span')
+ven95 = ven95.findAll('span')
+dtven = dtven.findAll('span')
+dp = dp.findAll('span')
